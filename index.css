@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    list-style: none;
+    border: black solid 2px; 
+}
+
+li {
+    text-align: center;
+}
+
+.li-score {
+    margin-left: -30px;
+}
+
+.li-question {
+    margin-left: 20px;
+}
+
+.total-score, .current-question {
+    margin-left: 2px;
+}
+
+div {
+    text-align: center;
+}
