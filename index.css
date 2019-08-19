@@ -17,7 +17,15 @@ ul {
     justify-content: center;
     
     list-style: none;
-    border: black solid 2px; 
+    border: #005a9c solid 2px;
+    width: 15%; 
+    border-radius: 6px;
+}
+
+div ul {
+    padding-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 li {
@@ -51,6 +59,7 @@ li span {
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 5px;
 
 }
 .quiz-questions {
@@ -111,3 +120,34 @@ body {
 
 
 }
+
+.feedback, .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/71l0jGkSSdL._SL1500_.jpg");
+    border-radius: 50%;
+    background-repeat: round;
+    height: 500px;
+    width: 500px;
+
+}
+
+
+.icon .feedback-pic-change {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    
+    border-radius: 50%;
+}
+
+/*.icon, .feedback-pic-change, .feedback-pic-static {
+    height:400px;
+    width: auto;
+    border-radius: 50%;
+}*/

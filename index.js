@@ -94,8 +94,7 @@ const levels = {
             
        <div class="icon">           
            <img class="feedback-pic-change" src="" alt=""/>
-           <img class="feedback-pic-background" src="https://cdn.shopify.com/s/files/1/0712/4751/products/ABB-B_High_Large_900x.jpg?v=1537468742"
-          alt="Picture of a baseball"/>
+           
        </div>
        <p>Home Run! You got it right!</p>
        <button type="button" class="next-button"> <span class="next-span"> Next </span> </button>
@@ -104,8 +103,7 @@ const levels = {
       
       <div class="icon">           
           <img class="feedback-pic-static" src="https://www.pressdemocrat.com/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=WApxaiKFxS9jf4Ptu5PN3s$daE2N3K4ZzOUsqbU5sYvcmOHmc_CZoRy2F1XkFrLuWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg" alt="Giants player striking out"/>
-          <img class="feedback-pic-background" src="https://cdn.shopify.com/s/files/1/0712/4751/products/ABB-B_High_Large_900x.jpg?v=1537468742"
-          alt="Picture of a baseball"/>
+          
       </div>
       <p>You're out! Sorry, that is incorrect. The right answer is <span class="span-feedback">${quizDatabase[questionNumber].correctAnswer}</span>.</p>
       <button type="button" class="next-button"> <span class="next-span"> Next </span> </button>
@@ -116,7 +114,7 @@ const levels = {
           <p><span>Thank you for playing.</span> </p>
 
       </div>
-      <button class="start-button" type="button">
+      <button class="restart-button" type="button">
           Try again</button>
     
       </div>`,
@@ -126,7 +124,7 @@ const levels = {
           <p><span>Thank you for playing.</span> </p>
 
       </div>
-      <button class="start-button" type="button">
+      <button class="restart-button" type="button">
           Try again</button>
     
       </div>`,   
@@ -136,7 +134,7 @@ const levels = {
           <p><span>Thank you for playing.</span> </p>
 
       </div>
-      <button class="start-button" type="button">
+      <button class="restart-button" type="button">
           Try again</button>
     
       </div>`,                   
@@ -291,7 +289,7 @@ function changeNextButton () {
 }
 
 function gotoNext () {
-    $('div.feedback').on('click', function (){
+    $('div .feedback').on('click', '.next-button', function () {
         if (questionNumber < 9) {
         changeQuestionNumber();
         generateForm ();
