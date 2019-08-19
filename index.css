@@ -4,6 +4,11 @@
 
 header {
     text-align: center;
+    color: #005a9c;
+    font-size: 60px;
+    font-family: 'Mr Dafoe', cursive;
+    margin-bottom: -15px;
+    margin-top: -10px;
 }
 
 ul {
@@ -17,6 +22,11 @@ ul {
 
 li {
     text-align: center;
+    color: white;
+    font-size: 20px;
+}
+li span {
+    color: #EF3E42;
 }
 
 .li-score {
@@ -31,8 +41,73 @@ li {
     margin-left: 2px;
 }
 
-.quiz-form, .quiz-start, footer {
+.quiz-start  {
     text-align: center;
-    border: black solid 2px;
+  
+    display: block;
 }
 
+.start-button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.quiz-questions {
+    display: none;
+}
+
+body {
+    background-image: url("https://media.gettyimages.com/photos/full-moon-over-dodgers-city-picture-id150181819?s=2048x2048");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-attachment: fixed;
+   
+    
+}
+
+.farmer-john {
+    height: 150px;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}
+
+.start-vin {
+    margin-top: 20px;
+    height: 20%;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+
+.quiz-start h1 {
+    font-family: 'Mr Dafoe', cursive;
+    /*color: #EF3E42;*/
+    color: white;
+    /*color: #1E90FF;*/
+    /*text-shadow: 4px 0px 4px #EF3E42;*/
+    
+}
+    
+
+
+.quiz-start {
+    margin-top: -20px;
+}
+
+.start-button {
+    color: #1e90ff;
+    font-size: 20px;
+    font-family: 'Mr Dafoe', cursive;
+    border-radius: 8px;
+    background-color: white;
+
+
+}
