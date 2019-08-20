@@ -56,8 +56,8 @@ const quizDatabase = [
     {question: 'Which movie included Vin Scully as the brodcaster?',
         answers: ['Bull Durham', 'For Love of the Game', 'A League of Their Own', 'Field of Dreams', 'Shagging Flies'],
         correctAnswer: 'For Love of the Game',
-        icon: 'https://chumley.barstoolsports.com/wp-content/uploads/2019/06/14/Screen-Shot-2019-06-14-at-2.45.59-PM-1024x566.png"',
-        alt: 'Picture of Vin Scully',
+        icon: 'https://chumley.barstoolsports.com/wp-content/uploads/2019/06/14/Screen-Shot-2019-06-14-at-2.45.59-PM-1024x566.png',
+        alt: 'Picture the movie cover for love of the game',
    
     },
     {question: 'Who is the winningest manager in Dodgers\' history?',
