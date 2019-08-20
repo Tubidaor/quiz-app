@@ -1,10 +1,5 @@
-// 1. I need to generate a form for each question
-// submit button needs to go to feedback page
-// 2. I need to make a database of all the questions and answers
-// 3. I need to make the score change
-// 4. I need to make a function to give feed back when user submits
-// 5. I need to make a function to give feed back at the end. 
-let questionNumber = 0;
+
+let questionNumber = 9;
 
 let score = 0;
 
@@ -17,21 +12,21 @@ const quizDatabase = [
 
     },
     {question: 'How many Rookie of The Year awards have been awarded to Dodgers\' players',
-        answers: [ 18, 5, 10, 25, 9],
+        answers: [  5, 10, 18, 25, 9],
         correctAnswer: 18,
         icon: 'https://media.gettyimages.com/photos/raul-mondesi-of-the-los-angeles-dodgers-is-greeted-by-teammates-eric-picture-id51687507?s=2048x2048',
         alt: 'Raul Mondesi and teammates Erik Karros, and Mike Piazza, ',
    
     },
     {question:'Who is the Dodgers\' all time leader in wins?',
-        answers: [ 'Clayton Kershaw', 'Orel Hershiser', 'Sandy Koufax', 'Fernando Valenzuela', 'Don Sutton'],
+        answers: [ 'Clayton Kershaw', 'Don Sutton','Orel Hershiser', 'Sandy Koufax', 'Fernando Valenzuela'],
         correctAnswer: 'Don Sutton',
         icon:'https://media.gettyimages.com/photos/former-los-angeles-dodgers-sandy-koufax-and-don-sutton-talk-as-they-picture-id170194273?s=2048x2048',
         alt: 'Photo of Don Sutton and Sandy Koufax',
    
     },
     {question:'Who is the dodgers all time leader in home runs?',
-        answers: ['Erik Karros', 'Shaw Green', 'Mike Piazza', 'Jackie Robinson', 'Duke Snider'],
+        answers: ['Duke Snider','Erik Karros', 'Shaw Green', 'Mike Piazza', 'Jackie Robinson'],
         correctAnswer: 'Duke Snider',
         icon: 'https://media.gettyimages.com/photos/full-length-portrait-of-american-baseball-player-duke-snider-sporting-picture-id2024755?s=2048x2048',
         alt: 'Portrait of Duke Snider',
@@ -45,7 +40,7 @@ const quizDatabase = [
    
     },
     {question: 'Which Dodgers\' player holds the record for most consecutive saves without a blown save, at 84?',
-        answers: ['Kenley Jansen', 'Jonathan Broxton', 'Todd Worrell', 'Jim Brewer', 'Eric Gagne'],
+        answers: ['Kenley Jansen', 'Jonathan Broxton', 'Eric Gagne', 'Todd Worrell', 'Jim Brewer'],
         correctAnswer: 'Eric Gagne',
         icon: 'https://media.gettyimages.com/photos/eric-gagne-of-the-los-angeles-dodgers-poses-during-media-photo-day-on-picture-id97384655?s=2048x2048',
         alt: 'image of Eric Gagne'
@@ -66,7 +61,7 @@ const quizDatabase = [
    
     },
     {question: 'Who is the winningest manager in Dodgers\' history?',
-        answers: ['Tommy Lasorda', 'Wilbert Robinson', 'Jim Tracy', 'Ned Hanion', 'Walter Alston'],
+        answers: ['Tommy Lasorda', 'Walter Alston', 'Wilbert Robinson', 'Jim Tracy', 'Ned Hanion'],
         correctAnswer: 'Walter Alston',
         icon: 'https://media.gettyimages.com/photos/manager-walter-alston-of-the-los-angeles-dodgers-looks-on-during-picture-id127372857?s=2048x2048',
         alt: 'Picture of Walter Alson',
@@ -99,7 +94,7 @@ const levels = {
        <p>Home Run! You got it right!</p>
        <button type="button" class="next-button"> <span class="next-span"> Next </span> </button>
        </div>`,
-       incorrect: `<div class="feedback">
+       incorrect: function () { return `<div class="feedback">
       
       <div class="icon">           
           <img class="feedback-pic-static" src="https://www.pressdemocrat.com/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=WApxaiKFxS9jf4Ptu5PN3s$daE2N3K4ZzOUsqbU5sYvcmOHmc_CZoRy2F1XkFrLuWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg" alt="Giants player striking out"/>
@@ -107,11 +102,12 @@ const levels = {
       </div>
       <p>You're out! Sorry, that is incorrect. The right answer is <span class="span-feedback">${quizDatabase[questionNumber].correctAnswer}</span>.</p>
       <button type="button" class="next-button"> <span class="next-span"> Next </span> </button>
-      </div>`,  
+      </div>`},  
       dodgerBlue: `<div class="quiz-retake">
       <h1>You scored <span class="final-score"> 0 </span> runs. You bleed Dodger Blue! </h1>
       <div>
-          <p><span>Thank you for playing.</span> </p>
+          <img class="start-vin" src="https://i.imgur.com/wook8kz.jpg" alt="Picture of Vin Scully"/>
+          <p class="the-end-p">Thank you for playing.</p>
 
       </div>
       <button class="restart-button" type="button">
@@ -121,7 +117,8 @@ const levels = {
       casualFan: `<div class="quiz-retake">
       <h1>You scored <span class="final-score"> 0 </span> runs. You know your stuff. </h1>
       <div>
-          <p><span>Thank you for playing.</span> </p>
+          <img class="start-vin" src="https://i.imgur.com/wook8kz.jpg" alt="Picture of Vin Scully"/> 
+          <p class="the-end-p">Thank you for playing.</p>
 
       </div>
       <button class="restart-button" type="button">
@@ -131,7 +128,8 @@ const levels = {
       giantsFan:  `<div class="quiz-retake">
       <h1>You scored <span class="final-score"> 0 </span> runs. You must be a Giants fan. </h1>
       <div>
-          <p><span>Thank you for playing.</span> </p>
+          <img class="start-vin" src="https://i.imgur.com/wook8kz.jpg" alt="Picture of Vin Scully"/>
+          <p class="the-end-p">Thank you for playing. </p>
 
       </div>
       <button class="restart-button" type="button">
@@ -186,7 +184,7 @@ if (questionNumber < quizDatabase.length) {
                     <span>${quizDatabase[questionNumber].answers[3]}</span>
                     </label>
                     <label class="answerOption">
-                    <input type="radio" value="${quizDatabase[questionNumber].answers[4]}" name="answer" required>
+                    <input type="radio" src="" value="${quizDatabase[questionNumber].answers[4]}" name="answer" required>
                     <span>${quizDatabase[questionNumber].answers[4]}</span>
                     </label>
                       
@@ -321,7 +319,7 @@ function hideFeedback () {
     $('.quiz-retake').hide();
 }
 function retakeQuiz () {
-    $('.quiz-retake').on('click', function (){
+    $('.quiz-retake').on('click', ".restart-button", function (){
         hideQuiz();
         hideFeedback();
         showStart();

@@ -55,13 +55,6 @@ li span {
     display: block;
 }
 
-.start-button {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 5px;
-
-}
 .quiz-questions {
     display: none;
 }
@@ -117,6 +110,11 @@ body {
     font-family: 'Mr Dafoe', cursive;
     border-radius: 8px;
     background-color: white;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+
 
 
 }
@@ -146,8 +144,62 @@ body {
     border-radius: 50%;
 }
 
-/*.icon, .feedback-pic-change, .feedback-pic-static {
-    height:400px;
-    width: auto;
+fieldset {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+.quiz-button, .restart-button, .next-button {
+    color: #1e90ff;
+    font-size: 20px;
+    font-family: 'Mr Dafoe', cursive;
+    border-radius: 8px;
+    background-color: white;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+h2 {
+    text-align: center;
+    color:  white;
+    font-size: 26px;
+    text-shadow: 2px 0px 4px #005a9c
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feedback p, .the-end-p, .quiz-retake h1 {
+    color: white;
+    font-size: 28px;
+    background-color: #005a9c;
+    border: #EF3E42 solid 2px;
+    padding: 6px;
+    border-radius: 6px;
+    font-family: 'Mr Dafoe', cursive;
+    text-align: center;
+}
+
+fieldset span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.feedback-pic-static {
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
-}*/
+}
+
+.the-end-p {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
