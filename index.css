@@ -191,6 +191,7 @@ fieldset span {
     font-weight: bold;
     font-size: 18px;
     color: white;
+    padding-right: 4px;
    
 }
 
@@ -257,4 +258,49 @@ label input {
       justify-content: space-between;
   }
     
+}
+
+@media (min-width: 412px) and (max-width:768px) {
+    header {
+        font-size: 26px;
+    }
+    .quiz-start h1 {
+        font-size: 22px;
+        margin-top: 30px;
+
+    }
+    .start-vin {
+        height: 300px;
+    }
+    .farmer-john {
+        height: 100px;
+    }
+    .feedback-pic-static {
+        height: 200px;
+        width: 200px;
+    }
+  .icon {
+      height: 250px;
+      width: 250px;
+  }  
+  .icon .feedback-pic-change {
+      height: 200px;
+      width: 200px;
+  }
+  .feedback p, .the-end-p, .quiz-retake h1 {
+    
+    font-size: 20px;
+  }
+  label { 
+      display: flex;
+      justify-content: space-between;
+  }
+    
+}
+
+@media (min-width: 769px) {
+    label { 
+        display: flex;
+        justify-content: space-between;
+    }
 }
