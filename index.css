@@ -18,7 +18,7 @@ ul {
     
     list-style: none;
     border: #005a9c solid 2px;
-    width: 15%; 
+    width: 250px; 
     border-radius: 6px;
 }
 
@@ -71,7 +71,7 @@ body {
 
 .farmer-john {
     height: 150px;
-    width: 25%;
+    width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -80,8 +80,8 @@ body {
 
 .start-vin {
     margin-top: 20px;
-    height: 20%;
-    width: 20%;
+    height: 400px;
+    width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -202,4 +202,19 @@ fieldset span {
     margin-left: auto;
     margin-right: auto;
     
+}
+
+@media (max-width:411px) {
+    header {
+        font-size: 30px;
+    }
+    .quiz-start h1 {
+        font-size: 30px;
+    }
+    .start-vin {
+        height: 200px;
+    }
+    .farmer-john {
+        height: 75px;
+    }
 }
