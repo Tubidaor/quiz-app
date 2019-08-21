@@ -15,9 +15,9 @@ ul {
     display:flex;
     flex-direction: row;
     justify-content: center;
-    
+    background-color: #005a9c;
     list-style: none;
-    border: #005a9c solid 2px;
+    border: #EF3E42 solid 2px;
     width: 250px; 
     border-radius: 6px;
 }
@@ -190,6 +190,23 @@ form {
 fieldset span {
     font-weight: bold;
     font-size: 18px;
+    color: white;
+   
+}
+
+label.answerOption {
+    
+    margin: 2px;
+    background-color: #005a9c;
+    border: #EF3E42 solid 2px;
+   
+    border-radius: 6px;
+    font-family: 'Mr Dafoe', cursive;
+}
+
+label input {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .feedback-pic-static {
@@ -206,10 +223,12 @@ fieldset span {
 
 @media (max-width:411px) {
     header {
-        font-size: 30px;
+        font-size: 20px;
     }
     .quiz-start h1 {
-        font-size: 30px;
+        font-size: 18px;
+        margin-top: 30px;
+
     }
     .start-vin {
         height: 200px;
@@ -217,4 +236,25 @@ fieldset span {
     .farmer-john {
         height: 75px;
     }
+    .feedback-pic-static {
+        height: 160px;
+        width: 160px;
+    }
+  .icon {
+      height: 200px;
+      width: 200px;
+  }  
+  .icon .feedback-pic-change {
+      height: 160px;
+      width: 160px;
+  }
+  .feedback p, .the-end-p, .quiz-retake h1 {
+    
+    font-size: 16px;
+  }
+  label { 
+      display: flex;
+      justify-content: space-between;
+  }
+    
 }
