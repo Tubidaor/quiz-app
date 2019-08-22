@@ -25,7 +25,7 @@ const quizDatabase = [
         alt: 'Photo of Don Sutton and Sandy Koufax',
    
     },
-    {question:'Who is the dodgers all time leader in home runs?',
+    {question:'Who is the Dodgers\' all time leader in home runs?',
         answers: ['Duke Snider','Erik Karros', 'Shaw Green', 'Mike Piazza', 'Jackie Robinson'],
         correctAnswer: 'Duke Snider',
         icon: 'https://media.gettyimages.com/photos/full-length-portrait-of-american-baseball-player-duke-snider-sporting-picture-id2024755?s=2048x2048',
