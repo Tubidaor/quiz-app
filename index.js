@@ -25,7 +25,7 @@ const quizDatabase = [
         alt: 'Photo of Don Sutton and Sandy Koufax',
    
     },
-    {question:'Who is the dodgers all time leader in home runs?',
+    {question:'Who is the Dodgers\' all time leader in home runs?',
         answers: ['Duke Snider','Erik Karros', 'Shaw Green', 'Mike Piazza', 'Jackie Robinson'],
         correctAnswer: 'Duke Snider',
         icon: 'https://media.gettyimages.com/photos/full-length-portrait-of-american-baseball-player-duke-snider-sporting-picture-id2024755?s=2048x2048',
@@ -46,7 +46,7 @@ const quizDatabase = [
         alt: 'image of Eric Gagne'
    
     },
-    {question: 'Who holds the record for most consecutive innings pitched wihtout an earned run?',
+    {question: 'Who holds the record for most consecutive innings pitched without an earned run?',
         answers: ['Sandy Koufax', 'Don Drysdale', 'Don Sutton', 'Don Newcombe', 'Orel Hershiser'],
         correctAnswer: 'Orel Hershiser',
         icon: 'https://media.gettyimages.com/photos/orel-hershiser-of-the-los-angeles-dodgers-pitches-during-an-mlb-game-picture-id902697050?s=2048x2048',
